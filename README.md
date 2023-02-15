@@ -37,18 +37,22 @@
 >  1. Solving more than 5 questions a week. 
 >  2. Create a directory with the problem name and create a code file and a README.md file. 
 >  3. Complete the problem approach and solution in detail in the README.md file. 
+>  4. Pull request with the original repo's own branch.
+>  5. The main branch of the original repo requires at least one member of the team to pull request.
 >  
 >  - 일주일에 5개 이상 문제를 풀이합니다. <br>
->  - 폴더는 문제 이름으로, 그리고 폴더 안에 코드 파일과 README.md 파일을 생성합니다. <br>
->  - 문제 접근법, 풀이 방법을 README.md 파일에 자세하게 작성합니다. 
+>  - 폴더는 문제 이름으로, 폴더 안에 코드 파일과 md 파일을 생성합니다. <br>
+>  - 문제 접근법, 풀이 방법을 md 파일에 자세하게 작성합니다. 
+>  - 원본 repo의 본인 branch로 pull request
+>  - 원본 repo의 main branch로 pull request시에는 최소 한명의 팀원의 approve가 필요합니다.
   
 ### commit 
 > ```shell
->  Title : Platform 
->  Body : Problem Information (Problem Name, Problem level, Time to Solve)
+>  Title : Platform Quiz Level Quiz Name
+>  Body : Quiz Information (Quiz Name, Quiz level, Time to Solve)
 >  ```
 >  
->  - 제목 : 플랫폼 <br>
+>  - 제목 : 플랫폼 문제 난이도 문제 이름 <br>
 >  - 본문 : 문제 정보 (문제 이름, 문제 난이도, 문제 풀이 시간)
 
 ### readme file 
