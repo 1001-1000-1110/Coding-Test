@@ -1,7 +1,5 @@
 # Quiz Name
 
-> ### problem information
-
 
 <br>
 
