@@ -59,7 +59,7 @@
 >  - 폴더는 문제 이름으로, 폴더 안에 코드 파일과 md 파일을 생성합니다. <br>
 >  - 문제 접근법, 풀이 방법을 md 파일에 자세하게 작성합니다. 
 >  - 원본 repo의 본인 branch로 pull request
->  - 원본 repo의 branch로 pull request시에는 최소 명의 팀원의 approve가 필요합니다.
+>  - 원본 repo의 branch로 pull request시에는 최소 2명의 팀원의 approve가 필요합니다.
   
 ### commit 
 > ```shell
