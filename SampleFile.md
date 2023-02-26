@@ -11,8 +11,7 @@
 
 ## 🔑 quiz solution
 
-```py
-print("write the code.")
+```java
 ```
 ### Time Complexity : O(N)
 ## 👩🏻‍🏫 TIL
