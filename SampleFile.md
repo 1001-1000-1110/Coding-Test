@@ -1,5 +1,5 @@
 # Quiz Name
-> ### platform / [level] <a href = ""> name </a>
+> ### Programmers BaekJoon / [level] <a href = ""> name </a>
 
 <br>
 
