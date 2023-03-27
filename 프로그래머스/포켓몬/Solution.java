@@ -12,7 +12,6 @@ class Solution {
         //nums.length/2 > set.size() 인 경우, set.size()출력
         if(nums.length/2 <= set.size())
             return nums.length/2;
-
         return set.size();
 
     }
