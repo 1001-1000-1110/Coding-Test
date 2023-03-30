@@ -52,12 +52,14 @@
 >  1. Solving more than 5 questions a week. 
 >  2. Create a directory with the problem name and create a code file and a README.md file. 
 >  3. Complete the problem approach and solution in detail in the README.md file. 
->  4. Pull request with the original repo's own branch.
->  5. The main branch of the original repo requires at least one member of the team to pull request.
+>  4. Create and push branches for each problem in your personal repo.
+>  5. Pull request with the original repo's own branch.
+>  6. The main branch of the original repo requires at least one member of the team to pull request.
 >  
 >  - 일주일에 5개 이상 문제를 풀이합니다. <br>
 >  - 폴더는 문제 이름으로, 폴더 안에 코드 파일과 md 파일을 생성합니다. <br>
 >  - 문제 접근법, 풀이 방법을 md 파일에 자세하게 작성합니다. 
+>  - 개인 repo에 문제별로 branch를 만들고 push 합니다. 
 >  - 원본 repo의 본인 branch로 pull request
 >  - 원본 repo의 branch로 pull request시에는 최소 2명의 팀원의 approve가 필요합니다.
   
