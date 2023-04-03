@@ -9,6 +9,8 @@ class Solution {
         //k번째 수 return할 배열에 저장
         int[] answer = new int[commands.length];
         int answerIndex = 0;
+        String ttt = "hi";
+
 
         for(int r = 0; r < commands.length; r++){
             /* 특정 구간을 복사하는 Arrays.copyOfRange(원본배열, 복사할 시작 인덱스, 복사할 종료 인덱스)로 대체 가능.*
