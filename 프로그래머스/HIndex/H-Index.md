@@ -1,5 +1,5 @@
 # Quiz Name
-> ### Programmers / [level] <a href = "https://school.programmers.co.kr/learn/courses/30/lessons/42747"> H-Index </a>
+> ### Programmers / [level 2] <a href = "https://school.programmers.co.kr/learn/courses/30/lessons/42747"> H-Index </a>
 
 <br>
 
