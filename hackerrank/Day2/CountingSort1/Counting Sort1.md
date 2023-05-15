@@ -1,10 +1,10 @@
 # Quiz Name
-> ### HackerRank / [Basic] <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-diagonal-difference/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-two&h_r=next-challenge&h_v=zen"> Diagonal Difference </a>
+> ### HackerRank / [Basic] <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-countingsort1/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-two"> Counting sort1 </a>
 
 <br>
 
 ## 💡 approaches
->  - 주어진 행렬의 (좌측상단 -> 우측하단, 우측상단 -> 좌측하단)대각선 요소를 더한 값의 차이를 반환하는 메소드 구현
+>  - 주어진 배열의 요소(0 ~ 100)가 몇개 있는지 파악하여 반환하는 메소드 구현.
 >  - 
 
 <br>
@@ -13,44 +13,37 @@
 
 ```java
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Stream;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
 
     /*
-     * Complete the 'diagonalDifference' function below.
+     * Complete the 'countingSort' function below.
      *
-     * The function is expected to return an INTEGER.
-     * The function accepts 2D_INTEGER_ARRAY arr as parameter.
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts INTEGER_ARRAY arr as parameter.
      */
 
-    public static int diagonalDifference(List<List<Integer>> arr) {
-        int n = arr.size();
-        int lpoint = 0;
-        int rpoint = n - 1;
-        int leftSum = 0;
-        int rightSum = 0;
-        for(int i = 0;  i < n; i++){
+    public static List<Integer> countingSort(List<Integer> arr) {
+        Collections.sort(arr, Collections.reverseOrder());
 
-            leftSum += arr.get(i).get(lpoint);
-            rightSum += arr.get(i).get(rpoint);
-
-            // System.out.println(arr.get(i).get(lpoint) + " " + arr.get(i).get(rpoint));
-
-            lpoint++;
-            rpoint--;
+        int[] cntArray = new int[100];
+        for(int num: arr){
+            cntArray[num]++;
         }
-        return Math.abs(leftSum - rightSum);
 
+        List<Integer> answer = new ArrayList<>();
+        for(int num: cntArray){
+            answer.add(num);
+        }
+
+        return answer;
     }
 
 }
@@ -62,30 +55,23 @@ public class Solution {
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<List<Integer>> arr = new ArrayList<>();
+        List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
 
-        IntStream.range(0, n).forEach(i -> {
-            try {
-                arr.add(
-                        Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                                .map(Integer::parseInt)
-                                .collect(toList())
-                );
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
+        List<Integer> result = Result.countingSort(arr);
 
-        int result = Result.diagonalDifference(arr);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+        bufferedWriter.write(
+                result.stream()
+                        .map(Object::toString)
+                        .collect(joining(" "))
+                        + "\n"
+        );
 
         bufferedReader.close();
         bufferedWriter.close();
     }
 }
-
 ```
 ### Time Complexity : O(N)
 ## 👩🏻‍🏫 TIL

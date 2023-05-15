@@ -1,4 +1,4 @@
-package hackerrank.Day2.CaesarCipher;
+package hackerrank.Day3.CaesarCipher;
 
 import java.io.*;
 
