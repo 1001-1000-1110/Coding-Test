@@ -1,4 +1,4 @@
-package hackerrank.Day4;
+package hackerrank.Day4.GridChallenge;
 
 import java.io.*;
 import java.util.List;
