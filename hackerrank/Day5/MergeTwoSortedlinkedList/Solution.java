@@ -1,4 +1,4 @@
-package hackerrank.Day5;
+package hackerrank.Day5.MergeTwoSortedlinkedList;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
