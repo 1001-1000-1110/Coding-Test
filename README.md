@@ -23,7 +23,7 @@
     <td align="center"><a href="https://github.com/ddang-jung"><b>Kim Hyeon Jung</b></td>
   </tr>
   <tr>
-    <td align="center">C, <strong>Python</strong></td>
+    <td align="center"><strong>C++, Python</strong></td>
     <td align="center">Java, <strong>Python</strong></td>
     <td align="center"><strong>Java</strong></td>
     <td align="center"><strong>Python</strong></td>
