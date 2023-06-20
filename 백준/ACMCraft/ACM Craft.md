@@ -1,5 +1,19 @@
-package 백준.ACMCraft;
+# Quiz Name
+> ### BaekJoon / [Gold 3] <a href = "https://www.acmicpc.net/problem/1005"> ACM Craft </a>
 
+<br>
+
+## 💡 approaches
+>  - 위상정렬, DP
+> 
+> 
+
+
+<br>
+
+## 🔑 quiz solution
+
+```java
 import java.io.*;
 import java.util.*;
 
@@ -8,7 +22,7 @@ public class Main {
     static int[] indegree;//진입차수
     static List<Integer>[] map;
     static int[] time;//건설시간
-    static int[] maxTime;//동일한 우선순위를 가진 건물들의 건설시간 중 가장 큰 값을 저장함.
+    static int[] maxTime;//dp
     public static void main(String[] args) throws IOException {
         //위상정렬
 
@@ -60,7 +74,7 @@ public class Main {
         }
 
         W = Integer.parseInt(br.readLine()); //건설해야할 건물
-
+        
         Queue<Integer> q = new LinkedList<>();
         for(int i = 1; i < indegree.length; i++){
             if(indegree[i] == 0){
@@ -84,3 +98,9 @@ public class Main {
         return maxTime[W];
     }
 }
+
+```
+### Time Complexity : O(N + K)
+## 👩🏻‍🏫 TIL
+>  - 위상정렬은 노드사이에 순환이 존재하지 않을 경우에 사용한다.
+>    - 모든 정점을 탐색하기 전에 종료되면 `순환`이 존재하는 것이다.
