@@ -1,5 +1,5 @@
 # Quiz Name
-> ### BaekJoon / [gold 3] <a href = "https://www.acmicpc.net/problem/1005"> ACM Craft </a>
+> ### BaekJoon / [Gold3] <a href = "https://www.acmicpc.net/problem/1005"> ACM Craft </a>
 
 <br>
 
