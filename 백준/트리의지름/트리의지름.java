@@ -36,7 +36,6 @@ public class 트리의지름 {
             }
         }
 
-        //dfs를 통해서 연결된 모든 노드를 다탐색함. 만약 시작된 노드가 visited라면 사용하지 ㅏㄶ음
         visited = new boolean[N + 1];
 
         dfs(1,0);
@@ -46,13 +45,12 @@ public class 트리의지름 {
     }
 
     private static void dfs(int i, int sum) {
-        //노드에 방문했는지 확인함.
         if(sum > Max){
             Max = sum;
             Node = i;
         }
         visited[i] = true;
-        //해당 노드와 연결되어 있는 노드들을 전부 방문함
+
         for(Info now : Map[i]){
             if(visited[now.node] == false){
                 visited[now.node] = true;
