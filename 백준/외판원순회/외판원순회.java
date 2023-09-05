@@ -36,6 +36,7 @@ public class 외판원순회 {
 
         int result = tsp(1,1);
         System.out.println(result);
+
     }
 
     private static int tsp(int now, int visited) {
