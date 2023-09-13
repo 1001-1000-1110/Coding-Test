@@ -28,7 +28,6 @@ def solution(phone_book):
     return True
 
 # hash
-'''
 def solution(phone_book): 
     hash_map = {}
     
@@ -43,7 +42,6 @@ def solution(phone_book):
                 return False
     
     return True
-'''
 ```
 
 >  - <strong> TIL ! </strong>
