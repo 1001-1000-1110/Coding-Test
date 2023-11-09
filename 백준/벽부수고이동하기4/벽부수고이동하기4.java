@@ -86,9 +86,9 @@ public class 벽부수고이동하기4 {
 
         int cnt = 0;
         for (int id : visited) {
-            if (groups.containsKey(id)) {
-                cnt += groups.get(id);
-            }
+
+            cnt += groups.get(id);
+
         }
 
         return (cnt + 1) % 10;
