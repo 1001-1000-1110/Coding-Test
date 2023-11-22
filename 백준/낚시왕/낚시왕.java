@@ -80,17 +80,19 @@ public class 낚시왕 {
             sizes[i] = z;
         }
 
-        printMap();
         //낚시
-        sharkFishing(0);
+//        sharkFishing(0);
 
-        for (int i = 1; i < c; i++) {
+        for (int i = 0; i < c; i++) {
+            System.out.println(i);
+            //낚시
+            System.out.println("전");
+            printMap();
+            sharkFishing(i);
             //상어이동
             sharksMove();
-            System.out.println(i);
+            System.out.println("이동 후");
             printMap();
-            //사람 이동 후 낚시
-            sharkFishing(i);
         }
 
         System.out.println(ans);
