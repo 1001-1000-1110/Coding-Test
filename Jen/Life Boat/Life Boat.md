@@ -5,17 +5,17 @@
 <br>
 
 ## 💡 approaches
->  - 보트를 가장 적은 횟수로 사용해 사람들을 이동시킨다. -> greedy 활용 
->  - 제일 무거운 사람 + 제일 가벼운 사람을 짝지어 이동시킨다. 
+> - 보트를 가장 적은 횟수로 사용해 사람들을 이동시킨다. -> greedy 활용 
+> - 제일 무거운 사람 + 제일 가벼운 사람을 짝지어 이동시킨다. 
 
 <br>
 
 ## 🔑 quiz solution
 
->  - people list를 deque로 만들고 내림차순 sort
->  - 무거운 사람은 왼쪽, 가벼운 사람은 오른쪽 -> index 지정
->  - 무게를 합해 limit보다 가벼우면 2명 다 빼기
->  - limit보다 무거우면 무거운 사람 1명만 뺀다.
+> - people list를 deque로 만들고 내림차순 sort
+> - 무거운 사람은 왼쪽, 가벼운 사람은 오른쪽 -> index 지정
+> - 무게를 합해 limit보다 가벼우면 2명 다 빼기
+> - limit보다 무거우면 무거운 사람 1명만 뺀다.
 
 ```py
 from collections import deque

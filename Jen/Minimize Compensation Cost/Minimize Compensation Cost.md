@@ -5,8 +5,8 @@
 <br>
 
 ## 💡 approaches
->  - heap 자료구조 활용, 우선순위 큐 
->  - 파이썬의 heapq 모듈은 MinHeap을 기반으로 구현되었기 때문에 이를 응용해 MaxHeap을 사용한다.
+> - heap 자료구조 활용, 우선순위 큐 
+> - 파이썬의 heapq 모듈은 MinHeap을 기반으로 구현되었기 때문에 이를 응용해 MaxHeap을 사용한다.
 
 <br>
 

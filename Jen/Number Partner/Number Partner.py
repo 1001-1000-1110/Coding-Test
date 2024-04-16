@@ -19,7 +19,6 @@ def solution(X, Y):
     else:
         return answer
 
-
 X = "102"
 Y = "1234501"
 print(solution(X, Y)) 

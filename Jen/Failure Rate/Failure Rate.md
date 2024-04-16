@@ -5,24 +5,24 @@
 <br>
 
 ## 💡 approaches
->  - 전체 스테이지 수 : N, 플레이어가 현재 멈춰 있는 스테이지 번호 : 배열 stages
->  - 스테이지에 도달했지만 clear하지 못한 플레이어 수 / 스테이지 도달한 플레이어수  
->  - 실패율이 높은 스테이지부터 내림차순으로 retrun한다. 
->  - stage 1 : 1/8 
->  - stage 2 : 3/7 (-1)
->  - stage 3 : 2/4 (-3)
->  - stage 4 : 1/2 (-1)
->  - stage 5 : 0/1 (-1)
->  - N은 스테이지 반복 횟수, stage의 len으로 전체 플레이어 수를 찾는다.
->  - 다음 스테이지로 넘어갈 때마다 통과한 플레이어와 통과하지 못한 플레이어를 구분해 전체 플레이어 수에서 빼주며 실패율을 계산한다. 
+> - 전체 스테이지 수 : N, 플레이어가 현재 멈춰 있는 스테이지 번호 : 배열 stages
+> - 스테이지에 도달했지만 clear하지 못한 플레이어 수 / 스테이지 도달한 플레이어수  
+> - 실패율이 높은 스테이지부터 내림차순으로 retrun한다. 
+> - stage 1 : 1/8 
+> - stage 2 : 3/7 (-1)
+> - stage 3 : 2/4 (-3)
+> - stage 4 : 1/2 (-1)
+> - stage 5 : 0/1 (-1)
+> - N은 스테이지 반복 횟수, stage의 len으로 전체 플레이어 수를 찾는다.
+> - 다음 스테이지로 넘어갈 때마다 통과한 플레이어와 통과하지 못한 플레이어를 구분해 전체 플레이어 수에서 빼주며 실패율을 계산한다. 
 
 <br>
 
 ## 🔑 quiz solution
 
->  - dict 형태로 저장 -> stage는 key, 실패율은 value 
->  - dict을 value 기준으로 정렬 후 key를 출력한다.
->  - 결과값 내림차순 정렬 후 stage 번호를 출력 -> sorted lambda x: answer[x] reverse=True를 사용해 코드를 작성
+> - dict 형태로 저장 -> stage는 key, 실패율은 value 
+> - dict을 value 기준으로 정렬 후 key를 출력한다.
+> - 결과값 내림차순 정렬 후 stage 번호를 출력 -> sorted lambda x: answer[x] reverse=True를 사용해 코드를 작성
 
 ```py
 def solution(N, stages):

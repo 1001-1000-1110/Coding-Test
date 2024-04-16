@@ -5,7 +5,7 @@
 <br>
 
 ## 💡 approaches
->  - queue를 활용한 풀이
+> - queue를 활용한 풀이
 
 <br>
 

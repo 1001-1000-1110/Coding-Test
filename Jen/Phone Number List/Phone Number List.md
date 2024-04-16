@@ -12,10 +12,10 @@
 
 ## 🔑 quiz solution
 
->  - sorted로 phone_book list를 정렬시킨다. 
->  - zip() 함수를 사용해 phone_list와 0번째 index를 제거한 phone_list를 i와 j에 매칭시킨다. 
->  - phone_list[1:]이 phone_list로 시작하면 False를 return 한다. 
->  - 위 경우를 제외하면 True를 return -> phone_book의 길이가 1인 경우 예외 처리 
+> - sorted로 phone_book list를 정렬시킨다. 
+> - zip() 함수를 사용해 phone_list와 0번째 index를 제거한 phone_list를 i와 j에 매칭시킨다. 
+> - phone_list[1:]이 phone_list로 시작하면 False를 return 한다. 
+> - 위 경우를 제외하면 True를 return -> phone_book의 길이가 1인 경우 예외 처리 
 
 ```py
 # implementation - sorted, zip, startswith
@@ -44,5 +44,5 @@ def solution(phone_book):
     return True
 ```
 
->  - <strong> TIL ! </strong>
->  - startswith() : 문자열이 특정 문자열로 시작하는지 확인할 수 있다. 
+> - <strong> TIL ! </strong>
+> - startswith() : 문자열이 특정 문자열로 시작하는지 확인할 수 있다. 

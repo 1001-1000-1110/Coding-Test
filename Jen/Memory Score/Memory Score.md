@@ -5,14 +5,14 @@
 <br>
 
 ## 💡 approaches
->  - 사진에 나오는 인물의 그리움 점수의 합 -> 추억 점수
->  - dict을 활용해서 계산한다. 
+> - 사진에 나오는 인물의 그리움 점수의 합 -> 추억 점수
+> - dict을 활용해서 계산한다. 
 <br>
 
 ## 🔑 quiz solution
 
->  - zip을 사용해 두 개의 리스트를 묶어준다. 
->  - 2차원 photo 배열을 돌며 원소가 name에 포함되어 있는 경우 name에 해당하는 yearning 점수를 더해준다.
+> - zip을 사용해 두 개의 리스트를 묶어준다. 
+> - 2차원 photo 배열을 돌며 원소가 name에 포함되어 있는 경우 name에 해당하는 yearning 점수를 더해준다.
 
 ```py
 def solution(name, yearning, photo):
@@ -28,14 +28,14 @@ def solution(name, yearning, photo):
     return answer
 ```
 
->  - List Comprension으로 더 간결하게 코드 작성을 할 수 있다. 
+> - List Comprension으로 더 간결하게 코드 작성을 할 수 있다. 
 
 ```py
 def solution(name, yearning, photo):
     return [sum(yearning[name.index(j)] for j in i if j in name) for i in photo]
 ```
 
->  - unordered_map으로 dict을 대체
+> - unordered_map으로 dict을 대체
 
 ```cpp
 #include <string>

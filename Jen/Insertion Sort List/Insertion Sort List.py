@@ -22,3 +22,4 @@ class Solution:
                 cur = node
                 
         return node.next
+    

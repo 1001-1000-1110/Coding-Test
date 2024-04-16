@@ -4,3 +4,4 @@ def solution(n, words):
             return [(i % n) +1, (i // n) + 1] # 번호, 순서를 리스트에 담아 반환 
     else: 
         return [0, 0]
+    
